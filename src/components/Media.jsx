@@ -2,13 +2,13 @@ import React from 'react';
 
 import Card from './Card';
 
-export default props => {
+export default ({min, max}) => {
     return (
         <Card title="Média dos números" green>
             <div>
                 <span>
                     <span>Resultado: </span>
-                    <strong>5</strong>
+                    <strong>{(max + min)/2}</strong>
                 </span>
             </div>
         </Card>
